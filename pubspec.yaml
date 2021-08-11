@@ -1,0 +1,175 @@
+name: bale_shop
+description: A new Flutter project.
+
+# The following defines the version and build number for your application.
+# A version number is three numbers separated by dots, like 1.2.43
+# followed by an optional build number separated by a +.
+# Both the version and the builder number may be overridden in flutter
+# build by specifying --build-name and --build-number, respectively.
+# In Android, build-name is used as versionName while build-number used as versionCode.
+# Read more about Android versioning at https://developer.android.com/studio/publish/versioning
+# In iOS, build-name is used as CFBundleShortVersionString while build-number used as CFBundleVersion.
+# Read more about iOS versioning at
+# https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CoreFoundationKeys.html
+version: 2.0.4+204
+
+environment:
+  sdk: ">=2.5.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # The following adds the Cupertino Icons font to your application.
+  # Use with the CupertinoIcons class for iOS style icons.
+  cupertino_icons: ^0.1.2
+  flutter_swiper : ^1.1.6
+  flutter_easyrefresh: ^2.1.7
+  dio: ^3.0.4
+  json_annotation: ^3.0.0
+  flutter_screenutil: ^0.5.3
+  flutter_html: ^0.11.0
+  url_launcher: ^5.2.7
+  provide: ^1.0.2
+  font_awesome_flutter: ^8.5.0
+  shared_preferences: ^0.5.12+4
+  city_pickers: ^0.1.30
+  share: ^0.6.3+5
+  flutter_easyloading: ^2.2.2
+  badges: ^1.1.0
+  flutter_datetime_picker: ^1.4.0
+  image_picker: ^0.6.3+4
+  cached_network_image: 2.1.0+1
+  flutter_blurhash: ^0.2.1
+  flutter_spinkit: ^4.1.2
+  jpush_flutter: ^0.5.5
+  stripe_payment: ^1.0.6
+  uni_links: ^0.4.0
+  facebook_app_events: ^0.8.2
+dev_dependencies:
+  build_runner: ^1.8.1
+  json_serializable: ^3.3.0
+#  flutter_test:
+#    sdk: flutter
+
+
+# For information on the generic Dart part of this file, see the
+# following page: https://dart.dev/tools/pub/pubspec
+
+# The following section is specific to Flutter.
+flutter:
+
+  # The following line ensures that the Material Icons font is
+  # included with your application, so that you can use the icons in
+  # the material Icons class.
+  uses-material-design: true
+
+  # To add assets to your application, add an assets section, like this:
+  assets:
+    - assets/icons/icon-top.png 
+    - assets/images/user-bg.png 
+    - assets/images/address-bottom.png
+    - assets/images/null-order.png
+    - assets/images/order-success.png 
+    - assets/images/cart-empty.png
+    - assets/images/discover.png
+    - assets/images/American-Express.png
+    - assets/images/MasterCard.png
+    - assets/images/visa.png
+    - assets/icons/all_orders.png
+    - assets/icons/to_be_shipped.png
+    - assets/icons/shipped.png
+    - assets/icons/completed.png
+    - assets/icons/user.png
+    - assets/icons/footmark.png
+    - assets/icons/love.png
+    - assets/icons/search.png
+    - assets/icons/icon-menu-word.png
+    - assets/icons/customer-service.png
+    - assets/icons/detail1.png
+    - assets/icons/detail2.png
+    - assets/icons/detail3.png
+    - assets/icons/detail4.png
+    - assets/icons/hot.png
+    - assets/icons/detail-favorite.png  
+    - assets/icons/detail-favorite-c.png
+    - assets/icons/detail-cart.png
+    - assets/icons/icon-home.png
+    - assets/icons/icon-home-c.png
+    - assets/icons/icon-my.png
+    - assets/icons/icon-my-c.png
+    - assets/icons/icon-cart-c.png
+    - assets/icons/icon-cart.png
+    - assets/icons/icon-search-c.png
+    - assets/icons/icon-search.png
+    - assets/icons/check-product.png
+    - assets/icons/logo.png
+    - assets/icons/icon-check-circle.png
+    - assets/icons/icon-home-white.png
+    - assets/icons/icon-share.png
+    - assets/icons/icon-back-light.png
+    - assets/icons/icon-right-red.png
+    - assets/icons/icon-back-right.png
+    - assets/icons/icon-go-top.png
+    - assets/icons/icon-back-dark.png
+    - assets/icons/icon-close.png
+    - assets/icons/search-light.png
+    - assets/icons/icon-success.png
+    - assets/icons/icon-del.png
+    - assets/icons/icon-del1.png
+    - assets/icons/icon_check.png
+    - assets/icons/icon_no_check.png
+    - assets/icons/icon-menu.png
+    - assets/icons/placeholder.png
+    - assets/icons/1.png
+    - assets/icons/2.png
+    - assets/icons/3.png
+    - assets/icons/4.png
+    - assets/icons/5.png
+    - assets/icons/6.png
+    - assets/icons/7.png
+    - assets/icons/1-now.png
+    - assets/icons/2-now.png
+    - assets/icons/3-now.png
+    - assets/icons/4-now.png
+    - assets/icons/5-now.png
+    - assets/icons/6-now.png
+    - assets/icons/7-now.png
+    - assets/icons/icon-after_sales-return.png
+    - assets/icons/icon-after_sales-exchange.png
+    - assets/icons/icon-page-arrow-down-detail-grey.png
+    - assets/icons/icon-upload.png
+    - assets/icons/icon-page-arrow-detail-blue.png
+    - assets/icons/icon-after_sale-application-failure.png
+    - assets/icons/icon-after_sale-application-cancel.png
+    - assets/icons/icon-after_sale-application-success.png
+    - assets/icons/icon-my_order-return.png
+    - assets/icons/icon-sku_exchange.png
+    - assets/icons/icon-heed.png
+    - assets/icons/icon-back-white.png
+    
+  # An image asset can refer to one or more resolution-specific "variants", see
+  # https://flutter.dev/assets-and-images/#resolution-aware.
+
+  # For details regarding adding assets from package dependencies, see
+  # https://flutter.dev/assets-and-images/#from-packages
+
+  # To add custom fonts to your application, add a fonts section here,
+  # in this "flutter" section. Each entry in this list should have a
+  # "family" key with the font family name, and a "fonts" key with a
+  # list giving the asset and other descriptors for the font. For
+  # example:
+  # fonts:
+  #   - family: Schyler
+  #     fonts:
+  #       - asset: fonts/Schyler-Regular.ttf
+  #       - asset: fonts/Schyler-Italic.ttf
+  #         style: italic
+  #   - family: Trajan Pro
+  #     fonts:
+  #       - asset: fonts/TrajanPro.ttf
+  #       - asset: fonts/TrajanPro_Bold.ttf
+  #         weight: 700
+  #
+  # For details regarding fonts from package dependencies,
+  # see https://flutter.dev/custom-fonts/#from-packages
